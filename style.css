@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #93c5fd, #a5b4fc); /* essa cor vai mudar de acordo com o clima */
+    transition: background 0.5s;
+}
+
+.weather-card {
+    background-color: #ffffff; 
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #1e293b;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weather-header, .weather-info, .weather-forecast li {
+    text-align: center;
+}
+
+.weather-header {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.temp-h1{
+    font-size: 4.5rem;
+    margin-top: -2.5rem;
+    margin-bottom: -1.5rem;
+}
+
+.weather-info {
+    margin-bottom: 1rem;
+}
+.view{
+    display: block!important;
+    width: 35%;
+}
+
+.currentTemp{
+    font-size: 4.5rem;
+}
+
+.hidden{
+    display: none;
+}
+.weather-forecast {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.weather-forecast li {
+    padding: 0.5rem 0;
+    border-top: 1px solid #ffffff;
+}
+
+.btn-box{
+    align-items: center;
+}
+.btn-more {
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.btn-more i {
+    margin-right: 5px; 
+}
+

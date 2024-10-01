@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo Automática</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-blue-200 flex items-center justify-center min-h-screen">
+    <div class="weather-card" id="weatherCard">
+        <center><img src="quente.png" alt="" style="display: none;" class="quente"></center>
+        <center><img src="frio.png" alt="" style="display: none;" class="frio"></center>
+        <center><img src="fresco.png" alt="" style="display: none;" class="fresco"></center>
+        <div class="weather-header" id="cityName">Carregando...</div>
+        <div class="weather-info currentTemp" id="currentTemp">Aguardando dados...</div>
+        <div class="weather-info" id="currentDetails"></div>
+        <ul class="weather-forecast hidden" id="forecastList"></ul>
+        <div class="btn-box">
+            <center><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg hover:shadow transition duration-200 ease-in-out flex items-center justify-center btn-more">
+                <i class="fas fa-calendar mr-2"></i>
+                <span>Previsão Semanal</span>
+            </button></center>       
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
